@@ -29,7 +29,7 @@ void Manager::Menu() {
 		case 1:
 			if (max <= 0)
 			{
-				cout << "No Equipment\n";
+				cout << "No Dogs\n";
 				break;
 			}
 			for (int i = 0; i < max; ++i)
