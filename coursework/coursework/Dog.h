@@ -23,6 +23,9 @@ public:
 	string Description_of_care_for_the_coat;
 
 	virtual void Filling();
+	virtual bool save(std::ofstream &file); // сохранение
+	virtual void Show();
+	virtual void Show_name() = 0;
 
 	Dog();
 	~Dog();
@@ -30,30 +33,42 @@ public:
 
 class Labrador : public Dog
 {
+public:
 	Labrador();
+	void Show_name();
 };
 
 class Husky : public Dog
 {
+public:
 	Husky();
+	void Show_name();
 };
 
 class Schnauzer : public Dog
 {
+public:
 	Schnauzer();
+	void Show_name();
 };
 
 class Chihuahua : public Dog
 {
+public:
 	Chihuahua();
+	void Show_name();
 };
 
 class Poodle : public Dog
 {
+public:
 	Poodle();
+	void Show_name();
 };
 
 class Spaniel : public Dog
 {
+public:
 	Spaniel();
+	void Show_name();
 };
